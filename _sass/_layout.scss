@@ -1,0 +1,490 @@
+/**
+ * Site header
+ */
+.header-background {
+    background-color: $light-blue;
+    height: 200px;
+    margin-top: -200px;
+    border-bottom: 2px solid #000;
+}
+
+.site-header {
+    border-bottom: 5px solid #000;
+    min-height: 56px;
+    padding-bottom: 56px;
+    position: relative;
+    background-color: $dark-blue;
+}
+
+.site-title {
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+
+    &,
+    &:visited {
+        color: #fff;
+    }
+
+    img {
+        margin-top: 15px;
+    }
+}
+
+.site-nav {
+    float: left;
+    line-height: 56px;
+    position: absolute;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: #fff;
+        font-size: 32px;
+        line-height: $base-line-height;
+        padding: 7px;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &:hover {
+            background-color: $orange;
+            box-shadow:
+              -1px -1px 0 #000,  
+               1px -1px 0 #000,
+              -1px  1px 0 #000,
+               1px  1px 0 #000;
+        }
+    }
+
+    .nav-icon {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 64px;
+        right: $spacing-unit / 2;
+        background-color: $dark-blue;
+        border: 1px solid #000;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+            color: #fff;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: #000;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+            margin-left: 20px;
+        }
+    }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    padding: $spacing-unit 0;
+    background-color: $dark-green;
+    border-top: 5px solid #000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+.site-footer:after {
+    // height: 142px;
+    content: "";
+    display: block;
+}
+
+.footer-heading {
+    font-size: 16px;
+    color: #fff;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+    
+    a {
+        color: #fff;
+    }
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    margin-left: $spacing-unit * 3;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+    text-align: left;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(33% - (#{$spacing-unit} / 2));
+    width:         calc(33% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(33% - (#{$spacing-unit} / 2));
+    width:         calc(33% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+    width: -webkit-calc(33% - (#{$spacing-unit} / 2));
+    width:         calc(33% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+
+/**
+ * Page content
+ */
+.home {
+    margin-top: -500px;
+    padding-top: 560px;
+
+    margin-bottom: -40px;
+    padding-bottom: 60px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: #fff;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+
+    a.post-link {
+        font-size: 32px;
+        color: $dark-green;
+    }
+}
+
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: 50px;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color; 
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+.pager {
+    list-style: none;
+
+    .next {
+        float: right;
+    }
+
+    .previous {
+        float: left;
+    }
+}
+
+/**
+ * Index
+ */
+.index-headline {
+    text-align: center;
+}
+.index-content {
+    margin-left: $spacing-unit * 2;
+}
+.index-col {
+    float: left;
+    margin: 5px 5px 60px 5px;
+    padding: 5px;
+    height: 200px;
+    width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+    width:         calc(30% - (#{$spacing-unit} / 2));
+
+    img, .game-video {
+        padding: 5px;
+        border: 2px solid #000;
+    }
+
+    h2 {
+        text-align: center;
+        position: relative;
+        bottom: 0;
+    }
+}
+
+@include media-query($on-palm) {
+    .index-content {
+        margin-left: 0;
+    }
+
+    .index-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+/**
+ * Posts
+ */
+.post {
+    margin-top: -500px;
+    padding-top: 560px;
+
+    margin-bottom: -40px;
+    padding-bottom: 60px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: #fff;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+
+    overflow: hidden;
+}
+
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
+/**
+ * Games
+ */
+.game-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: 50px;
+    }
+}
+.game-logo {
+    height: 150px;
+    max-width: 250px;
+}
+h2.game-title {
+    font-size: 62px;
+}
+.game-media {
+    text-align: center;
+}
+.game-video {
+    width: 100%;
+    clear: both;
+}
+.game-image {
+    width: 100%;
+    clear: both;
+}
+.game-meta {
+    font-size: $small-font-size;
+    color: $grey-color; 
+    margin-bottom: 0;
+}
+.game-platform {
+    font-size: $small-font-size;
+    color: $grey-color; 
+    padding: 0 10px;
+
+    &:not(:last-child) {
+        border-right: 1px solid #000;
+    }
+}
+
+/**
+ * People
+ */
+.about-img {
+    display: block;
+    margin: 20px auto;
+}
+
+.people-list {
+    list-style: none;
+    @extend %clearfix;
+
+    > li {
+        width: 50%;
+        margin: 0 auto 50px auto;
+    }
+
+    .people-col-0 {
+        float: left;
+        clear: left;
+    }
+    .people-col-1 {
+        float: right;
+        clear: right;
+    }
+}
+h2.people-title {
+    font-size: 22px;
+    display: inline;
+    padding: 0 28px;
+}
+.people-media {
+    text-align: center;
+    height: 250px;
+
+    .internal {
+        background: url("/assets/img/logo_coin.png") center left no-repeat;
+    }
+}
+.people-image {
+    width: 128px;
+    display: block;
+    margin: 0 auto;
+}
+.people-meta {
+    font-size: $small-font-size;
+    color: $grey-color; 
+    padding: 0 10px;
+
+    &:not(:last-child) {
+        border-right: 1px solid #000;
+    }
+}
+
+/**
+ * Presskit
+ */
+ .press-list {
+    list-style: none;
+    line-height: 28px;
+
+    > li {
+         margin-bottom: 50px;
+    }
+
+    img {
+        border: 1px solid #000;
+        padding: 20px;
+        margin-right: 100%;
+        margin-bottom: 10px;
+        max-width: 90%;
+    }
+
+    .important {
+        color: #b71c1c;
+        font-size: 48px;
+        vertical-align: middle;
+    }
+ }
+
+ /**
+  * Contact
+  */
+.contact-methods {
+    font-size: 42px;
+    list-style: none;
+
+    @include media-query($on-palm) {
+        font-size: 24px;
+    }
+}

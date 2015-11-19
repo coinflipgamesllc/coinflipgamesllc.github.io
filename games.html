@@ -1,0 +1,48 @@
+---
+layout: page
+title: Games
+permalink: /games/
+---
+
+<ul class="game-list">
+  {% for game in site.games %}
+    <li>
+      <div class="game-media">
+        {% if game.logo %}
+          <img class="game-logo" src="{{ game.logo }}"/>
+        {% else %}
+          <h2 class="game-title outlined">{{ game.name }}</h2>
+        {% endif %}
+
+        {% if game.video %}
+          <video class="game-video" src="{{ game.video }}" autobuffer autoloop autoplay loop poster="{{ game.static }}"></video>
+        {% elsif game.static %}
+          <img class="game-image" src="{{ game.static }}"/>
+        {% endif %}
+        <h4 class="game-meta">{{ game.release-date }}</h4>
+        {% for platform in game.platforms %}
+          <span class="game-platform">{{ platform }}</span>
+        {% endfor %}
+      </div>
+      <p>{{ game.description }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+<hr>
+<h2>Game Jams and Prototypes</h2>
+<ul class="game-list">
+  {% for prototype in site.prototypes %}
+    <li>
+      <div class="game-media">
+        <h2 class="game-title outlined">{{ prototype.name }}</h2>
+        <img class="game-image" src="{{ prototype.image }}"/>
+        <h4 class="game-meta">{{ prototype.event }} - {{ prototype.date }}</h4>
+        {% for platform in prototype.platforms %}
+          <span class="game-platform">{{ platform }}</span>
+        {% endfor %}
+      </div>
+      <p>{{ prototype.description }}</p>
+    </li>
+  {% endfor %}
+</ul>

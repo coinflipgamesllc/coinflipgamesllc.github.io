@@ -1,0 +1,48 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+<img class="about-img" src="/assets/img/logo_xlarge.png"/>
+<p>Coin Flip Games, LLC is a micro game studio based out of Fort Collins, Colorado.</p>
+<p>We were founded in January 2014 officially by Joel Trum and Robert Newton. We actually started working on our first title, Top Snake, back in May 2013, but didn't register as a company until we were </p>ready to release. We've released a bunch of games from various game jams and prototyping sessions and we're currently working on expanding our first mobile title, Bitmite Blitz. We've got a lot planned! Keep an eye on the blog!
+<p>Our goal is to bring an arcade spirit to all the games we produce. We want to make fun, addictive games with a distinct lack of bugs... though we make no such promise for our prototypes!</p>
+<p>Below you can see all the people involved with Coin Flip Games over time.</p>
+
+<h2>People</h2>
+
+<ul class="people-list">
+{% for person in site.people %}
+  {% assign i = forloop.index | modulo:2 %}
+  <li class="people-col-{{ i }}">
+    <div class="people-media">
+      <h2 class="people-title outlined {% if person.internal %}internal{% endif %}">{{ person.name }}</h2>
+      <img class="people-image" src="{{ person.image }}"/>
+      <span>{% if person.internal == false %}Freelance{% endif %}</span><br/>
+      {% for role in person.roles %}
+        <span class="people-meta">{{ role }}</span>
+      {% endfor %}
+    </div>
+  </li>
+{% endfor %}
+</ul>
+
+<h2>Presskit</h2>
+<p>We've bundled up our logo for easy use as a <a href="/assets/CoinFlipGamesLogo.zip">.zip</a>. Feel free to use this anywhere provide you follow the guidelines below:</p>
+<ul class="press-list">
+  <li><span class="important">*</span>All artwork is copyright Coin Flip Games, LLC. You cannot not claim ownership of the logo or any derivations.</li>
+  <li>
+    <img src="/assets/img/logo_xlarge.png"/>
+    <span class="important">*</span>Preferentially use the full logo. It's pixel art so it resizes easily. When resizing, use "Nearest Neighbor" interpolation in order to preserve hard edges and not blur. Do not use any anti-aliasing.
+  </li>
+  <li>
+    <img src="/assets/img/logo_coin_large.png"/>
+    <span class="important">*</span>Use the coin alone if the context with Coin Flip Games has already been established and a square logo is required.
+  </li>
+  <li>
+    <img src="/assets/img/logo_text_large.png"/>
+    <span class="important">*</span>Use the text-only logo if the image is displayed inline and the full logo makes the text unreadable.
+  </li>
+  <li><span class="important">*</span>Don't distort, warp, flip, rotate, skew, or crapulate the logo in anyway prior to displaying. We like it the way it is. We reserve the right to do any and all of these things. It is our logo after all.</li>
+</ul>

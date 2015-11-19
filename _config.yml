@@ -1,0 +1,97 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Coin Flip Games
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://coinflipgames.co" # the base hostname & protocol for your site
+paginate: 5
+paginate_path: "blog/page:num"
+excerpt_separator: "<!--break-->"
+
+# Build settings
+gems: [jekyll-paginate]
+markdown: redcarpet
+
+# Content settings
+email: hi@coinflipgames.co
+twitter_username: coinflipgames
+facebook_username: coinflipgames
+indiedb_username: coinflipgames
+youtube_username: coinflipgames
+gamejolt_url: http://gamejolt.com/profile/coin-flip-games/124787/games
+play_store_url: 
+app_store_url:
+steam_username: 
+github_username:  coinflipgamesllc
+
+people:
+  - name: Robert Newton
+    image: /assets/img/people/robert_newton.png
+    roles: [Co-Founder, Backend & Tools Engineer, Artist]
+    internal: true
+  - name: Joel Trum
+    image: /assets/img/people/joel_trum.png
+    roles: [Co-Founder, Lead Designer, Gameplay Engineer]
+    internal: true
+  - name: Al Boling
+    image: /assets/img/people/default.png
+    roles: [Artist, Designer]
+    internal: false
+  - name: Jeremy Trum
+    image: /assets/img/people/default.png
+    roles: [Testing & QA, Artist, Game Balance]
+    internal: false
+
+games:
+  - name: Bitmite Blitz
+    logo: /assets/img/games/bitmite-blitz-logo.png
+    video: /assets/img/games/bitmite-blitz.mp4
+    static: /assets/img/games/bitmite-blitz.png
+    description: "Bitmite Blitz is an endless runner with many unique levels and difficulty levels. There is plenty for everyone to enjoy, but we feel people with a competitive spirit will especially fall in love with our game. Not only are there online leaderboards for every stage and difficulty, but there are also 50 different achievements that range from incredibly easy to insanely hard."
+    release-date: Early 2016
+    platforms: [android, ios]
+  - name: Shuffle Grand Prix
+    logo: 
+    video: 
+    static: /assets/img/games/shuffle-grand-prix.png
+    description: "Shuffle Grand Prix is a fast-paced futuristic hover-bike racing game! Race for glory across randomly generated tracks in a wide variety of environments. Share your favorite randomly generated tracks with friends and foes."
+    release-date: TBD
+    platforms: [windows, osx, linux]
+  - name: Top Snake
+    logo: /assets/img/games/top-snake-logo.png
+    video: 
+    static: /assets/img/games/top-snake.png
+    description: "Top Snake is an arcade battle game. Race against the clock to beat your enemies. Eat or be eaten!"
+    release-date: December 6, 2013
+    platforms: [windows, osx, linux]
+
+prototypes:
+  - name: Ravenous Ravenous Raptors 
+    description: "You are a newly built Robo Feeder 3000, and your job is to feed the ravenous raptors. Move around and knock the cows into the raptor's mouths."
+    image: /assets/img/prototypes/ravenous-ravenous-raptors.png
+    event: Bacon Game Jam 7
+    date: March 23, 2014
+    platforms: [web]
+  - name: Upsanity
+    description: "We don't see things as they are, we see them as we are... and some see themselves exactly how they want to. Upsanity is a game about a insane asylum patient with delusions of being an elevator. Who are you to judge? Help the patient reach their dreams to move people from floor to floor!"
+    image: /assets/img/prototypes/upsanity.png
+    event: Global Game Jam 2014
+    date: January 27, 2014
+    platforms: [web]
+  - name: Get a Job!
+    description: "You Only Get One day to prove yourself at this job. Get to it! Take customer orders, remember who got what and make it to sunset."
+    image: /assets/img/prototypes/get-a-job.png
+    event: Ludum Dare 28
+    date: December 16, 2013
+    platforms: [web]
+  - name: From the Woods
+    description: "Top Down Hack-n-Slash survival game based on simple mechanics. Kill the orcs, buy upgrades, survive."
+    image: /assets/img/prototypes/from-the-woods.png
+    event: Walking Dead Game Jam 1
+    date: October 12, 2013
+    platforms: [web]
