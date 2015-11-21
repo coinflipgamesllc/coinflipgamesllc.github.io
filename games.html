@@ -23,6 +23,9 @@ permalink: /games/
         {% for platform in game.platforms %}
           <span class="game-platform">{{ platform }}</span>
         {% endfor %}
+        {% for link in game.links %}
+          <span class="game-link outlined">{{ link }}</span>
+        {% endfor %}
       </div>
       <p>{{ game.description }}</p>
     </li>

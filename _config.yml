@@ -55,6 +55,7 @@ games:
     description: "Bitmite Blitz is an endless runner with many unique levels and difficulty levels. There is plenty for everyone to enjoy, but we feel people with a competitive spirit will especially fall in love with our game. Not only are there online leaderboards for every stage and difficulty, but there are also 50 different achievements that range from incredibly easy to insanely hard."
     release-date: Early 2016
     platforms: [android, ios]
+    links: []
   - name: Shuffle Grand Prix
     logo: 
     video: 
@@ -62,6 +63,7 @@ games:
     description: "Shuffle Grand Prix is a fast-paced futuristic hover-bike racing game! Race for glory across randomly generated tracks in a wide variety of environments. Share your favorite randomly generated tracks with friends and foes."
     release-date: TBD
     platforms: [windows, osx, linux]
+    links: []
   - name: Top Snake
     logo: /assets/img/games/top-snake-logo.png
     video: 
@@ -69,6 +71,7 @@ games:
     description: "Top Snake is an arcade battle game. Race against the clock to beat your enemies. Eat or be eaten!"
     release-date: December 6, 2013
     platforms: [windows, osx, linux]
+    links: ['<a href="http://www.desura.com/games/top-snake">Download on Desura!</a>']
 
 prototypes:
   - name: Ravenous Ravenous Raptors 

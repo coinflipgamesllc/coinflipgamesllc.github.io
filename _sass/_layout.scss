@@ -396,6 +396,27 @@ h2.game-title {
         border-right: 1px solid #000;
     }
 }
+.game-link {
+    font-size: 32px;
+    line-height: $base-line-height;
+    padding: 7px;
+    display: block;
+
+    a {
+        padding: 7px;
+        color: #fff !important;
+        background-color: $orange;
+        box-shadow:
+          -1px -1px 0 #000,
+           1px -1px 0 #000,
+          -1px  1px 0 #000,
+           1px  1px 0 #000;
+    }
+
+    a:visited {
+        color: #fff !important;
+    }
+}
 
 /**
  * People
