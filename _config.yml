@@ -52,10 +52,10 @@ games:
     logo: /assets/img/games/bitmite-blitz-logo.png
     video: /assets/img/games/bitmite-blitz.mp4
     static: /assets/img/games/bitmite-blitz.png
-    description: "Bitmite Blitz is an endless runner with many unique levels and difficulty levels. There is plenty for everyone to enjoy, but we feel people with a competitive spirit will especially fall in love with our game. Not only are there online leaderboards for every stage and difficulty, but there are also 50 different achievements that range from incredibly easy to insanely hard."
-    release-date: Early 2016
+    description: "Play Bitmite Blitz! Dodge spiders, dust bunnies and staples in a race to the top of the leaderboards. Complete 50 achievements that change the way you play the game and brings new challenges. Compete against the world on the online leaderboards for every level and difficulty."
+    release-date: February 2016
     platforms: [android, ios]
-    links: []
+    links: ['<a href="https://play.google.com/store/apps/details?id=com.CoinFlipGamesLLC.BitmiteBlitz">Download for Android!</a>', '<a href="https://itunes.apple.com/us/app/bitmite-blitz/id1057575330?mt=8">Download for iOS!</a>', '<a href="http://bitmiteblitz.coinflipgames.co">Go to the Website</a>']
   - name: Shuffle Grand Prix
     logo: 
     video: 
@@ -69,7 +69,7 @@ games:
     video: 
     static: /assets/img/games/top-snake.png
     description: "Top Snake is an arcade battle game. Race against the clock to beat your enemies. Eat or be eaten!"
-    release-date: December 6, 2013
+    release-date: December 2013
     platforms: [windows, osx, linux]
     links: ['<a href="http://www.desura.com/games/top-snake">Download on Desura!</a>']
 
