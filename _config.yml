@@ -15,7 +15,6 @@ excerpt_separator: "<!--break-->"
 
 # Build settings
 gems: [jekyll-paginate]
-markdown: redcarpet
 
 # Content settings
 email: hi@coinflipgames.co
@@ -24,9 +23,9 @@ facebook_username: coinflipgames
 indiedb_username: coinflipgames
 youtube_username: coinflipgames
 gamejolt_url: http://gamejolt.com/profile/coin-flip-games/124787/games
-play_store_url: 
-app_store_url:
-steam_username: 
+play_store_url: https://play.google.com/store/apps/developer?id=Coin+Flip+Games
+app_store_url: https://itunes.apple.com/us/developer/coin-flip-games-llc/id1057575329
+steam_username:
 github_username:  coinflipgamesllc
 
 people:
@@ -57,8 +56,8 @@ games:
     platforms: [android, ios]
     links: ['<a href="https://play.google.com/store/apps/details?id=com.CoinFlipGamesLLC.BitmiteBlitz">Download for Android!</a>', '<a href="https://itunes.apple.com/us/app/bitmite-blitz/id1057575330?mt=8">Download for iOS!</a>', '<a href="http://bitmiteblitz.coinflipgames.co">Go to the Website</a>']
   - name: Shuffle Grand Prix
-    logo: 
-    video: 
+    logo:
+    video:
     static: /assets/img/games/shuffle-grand-prix.png
     description: "Shuffle Grand Prix is a fast-paced futuristic hover-bike racing game! Race for glory across randomly generated tracks in a wide variety of environments. Share your favorite randomly generated tracks with friends and foes."
     release-date: TBD
@@ -66,7 +65,7 @@ games:
     links: []
   - name: Top Snake
     logo: /assets/img/games/top-snake-logo.png
-    video: 
+    video:
     static: /assets/img/games/top-snake.png
     description: "Top Snake is an arcade battle game. Race against the clock to beat your enemies. Eat or be eaten!"
     release-date: December 2013
@@ -74,7 +73,7 @@ games:
     links: ['<a href="http://www.desura.com/games/top-snake">Download on Desura!</a>']
 
 prototypes:
-  - name: Ravenous Ravenous Raptors 
+  - name: Ravenous Ravenous Raptors
     description: "You are a newly built Robo Feeder 3000, and your job is to feed the ravenous raptors. Move around and knock the cows into the raptor's mouths."
     image: /assets/img/prototypes/ravenous-ravenous-raptors.png
     event: Bacon Game Jam 7
