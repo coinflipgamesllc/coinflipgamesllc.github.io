@@ -19,7 +19,7 @@ Here's what some people are saying...
 
 > 4/5 Stars
 
-- [Peter at Elotalk](http://elotalk.com/bitmite-blitz/)
+- [Elotalk](http://elotalk.com/bitmite-blitz/)
 
 > For this to be free and as hard as it is, this is pretty good.
 
